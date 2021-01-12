@@ -42,11 +42,11 @@ class Blade {
 	 * @param string $cachePath
 	 * @param Illuminate\Events\Dispatcher $events
 	 */
-	function __construct(array $viewPaths, string $cachePath, Dispatcher $events = null) {
+	function __construct($viewPaths, $cachePath, Dispatcher $events = null) {
 
 		$this->container = new Container;
 
-		$this->viewPaths = $viewPaths;
+		$this->viewPaths = (array) $viewPaths;
 
 		$this->cachePath = $cachePath;
 

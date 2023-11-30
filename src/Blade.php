@@ -1,4 +1,4 @@
-<?php namespace Aschmelyun\Blade;
+<?php namespace EqxDev\Blade;
 
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
